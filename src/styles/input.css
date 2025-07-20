@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne:wght@400..800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-body: "Syne", sans-serif;
+  --radius-45: 45px;
+  --height-card: 94vh;
+  --margin-1_5p: 1.5%;
+}
+
+@layer base {
+  body {
+    @apply font-body;
+    background-color: #efefef;
+  }
+}
+
+.text-gradient-white-black {
+  @apply bg-gradient-to-r from-white to-[#303030] bg-clip-text text-transparent;
+}
